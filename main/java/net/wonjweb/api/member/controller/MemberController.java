@@ -1,7 +1,9 @@
 package net.wonjweb.api.member.controller;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
+import lombok.RequiredArgsConstructor;
+import net.wonjweb.api.member.domain.MemberDTO;
+import net.wonjweb.api.member.service.MemberService;
+import org.springframework.web.bind.annotation.*;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -18,10 +20,19 @@ import java.util.Date;
  * 2022-02-11     Jangwonjong       최초 생성
  */
 @RestController
+@RequiredArgsConstructor
 public class MemberController {
-    @GetMapping("/")
-    public String now (){
-        return new SimpleDateFormat("yyyy-MM-dd hh:mm:ss").format(new Date());
-    }
 
+   private final MemberService service;
+
+   @GetMapping("/member/bmi/{name}/{height}/{weight}")
+   public String getBmi(@PathVariable String name,
+                        @PathVariable double height,
+                        @PathVariable double weight){
+      System.out.println(" 리액트에서 넘어온 이름: "+name);
+      System.out.println(" 리액트에서 넘어온 키: "+height);
+      System.out.println(" 리액트에서 넘어온 몸무게: "+weight);
+      return "BMI는  정상";
+
+   }
 }

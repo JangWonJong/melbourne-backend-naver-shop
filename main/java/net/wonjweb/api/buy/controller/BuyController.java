@@ -1,5 +1,7 @@
 package net.wonjweb.api.buy.controller;
 
+import org.springframework.web.bind.annotation.RestController;
+
 /**
  * packageName: net.wonjweb.api.buy.controller
  * fileName   : BuyController
@@ -11,5 +13,6 @@ package net.wonjweb.api.buy.controller;
  * ======================================
  * 2022-02-11     Jangwonjong       최초 생성
  */
+@RestController
 public class BuyController {
 }

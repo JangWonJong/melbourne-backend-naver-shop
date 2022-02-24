@@ -13,9 +13,12 @@ package net.wonjweb.api.member.service;
  */
 public interface MemberService {
     String membershipList();
-    String membershipInformation();
+    String membershipInfo();
     String viewListShipments();
     String registerSendEmail();
     String savingMoneyList();
     String viewSavingMoney();
+    String calc();
+    String bmi();
+    String grade();
 }

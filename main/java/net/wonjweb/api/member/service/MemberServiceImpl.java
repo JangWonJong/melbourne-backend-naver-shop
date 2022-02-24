@@ -1,5 +1,7 @@
 package net.wonjweb.api.member.service;
 
+import org.springframework.stereotype.Service;
+
 /**
  * packageName: net.wonjweb.api.common.service
  * fileName   : MemberServiceImpl
@@ -11,6 +13,7 @@ package net.wonjweb.api.member.service;
  * ======================================
  * 2022-02-11     Jangwonjong       최초 생성
  */
+@Service
 public class MemberServiceImpl implements MemberService{
 
     @Override
@@ -19,9 +22,10 @@ public class MemberServiceImpl implements MemberService{
     }
 
     @Override
-    public String membershipInformation() {
+    public String membershipInfo() {
         return null;
     }
+
 
     @Override
     public String viewListShipments() {
@@ -40,6 +44,21 @@ public class MemberServiceImpl implements MemberService{
 
     @Override
     public String viewSavingMoney() {
+        return null;
+    }
+
+    @Override
+    public String calc() {
+        return null;
+    }
+
+    @Override
+    public String bmi() {
+        return null;
+    }
+
+    @Override
+    public String grade() {
         return null;
     }
 }
