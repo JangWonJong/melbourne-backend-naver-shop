@@ -1,5 +1,6 @@
 package net.wonjweb.api.buy.controller;
 
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -14,5 +15,6 @@ import org.springframework.web.bind.annotation.RestController;
  * 2022-02-11     Jangwonjong       최초 생성
  */
 @RestController
+@RequestMapping("/buy")
 public class BuyController {
 }
