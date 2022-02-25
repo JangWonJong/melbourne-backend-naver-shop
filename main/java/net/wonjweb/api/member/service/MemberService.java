@@ -1,5 +1,8 @@
 package net.wonjweb.api.member.service;
 
+import net.wonjweb.api.member.domain.CalcDTO;
+import net.wonjweb.api.member.domain.MemberDTO;
+
 /**
  * packageName: net.wonjweb.api.common.service
  * fileName   : MemberService
@@ -12,13 +15,12 @@ package net.wonjweb.api.member.service;
  * 2022-02-11     Jangwonjong       최초 생성
  */
 public interface MemberService {
-    String membershipList();
-    String membershipInfo();
-    String viewListShipments();
-    String registerSendEmail();
-    String savingMoneyList();
-    String viewSavingMoney();
-    String calc();
-    String bmi();
-    String grade();
+
+    String calc(CalcDTO calc);
+
+    String bmi(MemberDTO bmi);
+
+    String grade(MemberDTO grade);
+
+    String login(MemberDTO login);
 }

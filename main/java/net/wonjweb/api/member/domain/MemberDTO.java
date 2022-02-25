@@ -30,6 +30,10 @@ public class MemberDTO {
     private int kor;
     private int eng;
     private int math;
+    private String id;
+    private String pw;
+    public static String PASSWORD = "abc";
+
 
 }
 
